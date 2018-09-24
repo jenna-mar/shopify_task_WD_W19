@@ -1,0 +1,26 @@
+/*
+*= require_tree
+*= require_self
+*/
+
+html{
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+	color: #333333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+	padding: 50px 0;
+	background-color: #7433f1;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 2.2em;
+}

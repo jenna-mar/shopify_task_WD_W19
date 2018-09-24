@@ -1,0 +1,39 @@
+<%# Partial template for repo tables %>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Language</th>
+		<th>Latest tag</th>
+		<th></th>
+	</tr>
+	
+	<% if repos %>
+		<% repos.each do |r| %>
+			<tr>
+				<td><a href="<%= r.url %>"><%= r.name_with_owner %></a></td>
+				<%# In rare cases, the repo does not have a primary language. %>
+				<td><% if r.primary_language %>
+					<%= r.primary_language.name %>
+					<% end %>
+				</td>
+				<td>
+					<% if r.releases.nodes.first %>
+						<%= r.releases.nodes.first.tag.name %>
+					<% else %>
+						-
+					<% end %>
+				</td>
+				<td>
+					<%# Display "Remove" if the table is showing favourited repos %>
+					<% if fav %>
+						<%= link_to 'Remove', remove_star_path(id: r.id, query: params[:query]),  method: :post %>
+					<% else %>
+						<% if !r.viewer_has_starred %>
+							<%= link_to 'Add', add_star_path(id: r.id, query: params[:query]),  method: :post %>
+						<% end %>
+					<% end %>
+				</td>
+			</tr>
+		<% end %>
+	<% end %>
+</table>

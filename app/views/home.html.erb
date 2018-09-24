@@ -1,0 +1,15 @@
+<%# container for search bar and list of search results %>
+<div class="search-container">
+	<%= form_tag("/search", method: "get") do %>
+	  <%= text_field_tag(:query, params[:query]) %>
+	  <%= submit_tag("Search") %>
+	<% end %>
+	<%= render "/table",  repos: @results, fav: false %>
+</div>
+<%# container for list of favourited repos %>
+<div class="fav-container">
+	<%# only render if there is more than 1 starred repo %>
+	<% if @starred_repos.count > 1 %>
+		<%= render "/table",  repos: @starred_repos, fav: true %>
+	<% end %>
+</div>
