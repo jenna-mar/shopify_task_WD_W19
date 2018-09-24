@@ -4,6 +4,8 @@
 
 Solution fulfils all listed requirements of the [Shopify - Winter 2019 - Web Developer Internship Challenge](https://drive.google.com/file/d/1m99bOQvewIpx0POBtGwFayZqcpiM5cXP/view).
 
+A sample of the application may be viewed and tested [here](https://peaceful-shore-72518.herokuapp.com/).
+
 ##### Bonus Features
 
   * Front-end acts as client to [GitHub GraphQL API v4](https://developer.github.com/v4/) (rather than REST)
