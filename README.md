@@ -2,9 +2,9 @@
 
 ### Description
 
-Solution fulfils all listed requirements of the [Shopify - Winter 2019 - Web Developer Internship Challenge](https://drive.google.com/file/d/1m99bOQvewIpx0POBtGwFayZqcpiM5cXP/view).
+Solution fulfils all listed requirements of the [Shopify - Winter 2019 - Web Developer Internship Challenge](https://drive.google.com/file/d/1m99bOQvewIpx0POBtGwFayZqcpiM5cXP/view). Thus, it should be possible to search Github repositories, favourite repos, and manage favourites.
 
-A sample of the application may be viewed and tested [here](https://peaceful-shore-72518.herokuapp.com/).
+A deployed instance is available to view and test [here](https://peaceful-shore-72518.herokuapp.com/).
 
 ##### Bonus Features
 
